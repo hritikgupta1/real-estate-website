@@ -1,6 +1,86 @@
-<?php $page_title = "Dwell Properties — Home";
+<?php $page_title = "Dubai Space — Home";
 include 'db.php';
 include 'header.php'; ?>
+
+<style>
+  /* Responsive */
+  @media (max-width:1224px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .listings {
+      padding: 30px 25px 50px 25px;
+    }
+
+    .chooser-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 0 15px 0 15px;
+    }
+  }
+
+  @media (max-width:768px) {
+
+    .panel img {
+      height: 220px;
+      padding: 10px;
+      border-radius: 30px;
+    }
+
+    .listings {
+      padding: 30px 10px 50px 10px;
+    }
+
+
+    .menu.show {
+      display: flex
+    }
+
+    .menu-toggle {
+      display: block
+    }
+
+    .chooser-grid {
+      grid-template-columns: 1fr
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .grid-3 {
+      grid-template-columns: 1fr
+    }
+
+    .grid-2 {
+      grid-template-columns: 1fr
+    }
+
+  }
+
+  @media (max-width:500px) {
+    .cards {
+      grid-template-columns: 1fr
+    }
+
+    .hero h1 {
+      font-size: 36px
+    }
+
+    .panel img {
+      height: 220px;
+      padding: 10px;
+      border-radius: 30px;
+    }
+
+    .listings {
+      padding: 30px 10px 50px 10px;
+    }
+
+  }
+</style>
 <section class="hero" style="background-image: url('images/hero.jpg');">
   <div class="overlay"></div>
   <div class="hero-content container">

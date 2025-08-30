@@ -2,7 +2,23 @@
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.menu');
-  if (btn && menu) btn.addEventListener('click', ()=> menu.classList.toggle('show'));
+
+  if (btn && menu) {
+    // set default icon
+    btn.textContent = "☰";
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('show');
+      btn.classList.toggle('active');
+
+      // Swap icon text
+      if (btn.classList.contains('active')) {
+        btn.textContent = "✖"; // X
+      } else {
+        btn.textContent = "☰"; // Hamburger
+      }
+    });
+  }
 
   // simple stories carousel
   const quotes = document.querySelectorAll('.carousel blockquote');

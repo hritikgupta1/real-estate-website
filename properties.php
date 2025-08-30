@@ -1,5 +1,5 @@
 <?php
-$page_title = "Browse Properties";
+$page_title = "Dubai Space - Properties";
 include 'db.php';
 include 'header.php';
 
@@ -42,6 +42,24 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
 $rows = $stmt->fetchAll();
 ?>
+
+<style>
+  @media (max-width:790px) {
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 12px 0 20px;
+      flex-direction: column;
+    }
+
+    .filters .btn {
+      border-color: #e2e8f0;
+      text-align: center;
+    }
+
+  }
+</style>
 <section class="container">
   <h1>Properties <?= $type ? '(' . htmlspecialchars(strtoupper($type)) . ')' : '' ?></h1>
   <form class="filters" method="get">
@@ -66,7 +84,7 @@ $rows = $stmt->fetchAll();
             ₹<?= number_format((float)str_replace(['₹', ',', '$'], '', $row['price'])) ?>
           </p>
           <div class="meta">
-            <span ><span class="highlight"><?= (int)$row['bedrooms'] ?></span>Bedroom</span>
+            <span><span class="highlight"><?= (int)$row['bedrooms'] ?></span>Bedroom</span>
             <span><span class="highlight"><?= (int)$row['bathrooms'] ?></span>Bathroom</span>
             <span><span class="highlight"><?= (int)$row['floors'] ?></span>Floor</span>
             <span><span class="highlight"><?= (int)$row['sqft'] ?></span>Sqft</span>

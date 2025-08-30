@@ -13,7 +13,7 @@
   <div class="container nav">
     <a class="brand" href="index.php">
       <img src="images/logo.svg" alt="Dwell Properties logo" class="logo" />
-      <span>Properties</span>
+      <!-- <span>Space</span> -->
     </a>
     <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
     <nav class="menu">

@@ -1,15 +1,104 @@
-<?php 
-$page_title = "About Us — Dwell Properties";
+<?php
+$page_title = "About Us — Dubai Space";
 include 'db.php';
-include 'header.php'; 
+include 'header.php';
 ?>
 <style>
-  .contact-page{padding:30px 0 60px} 
-  .contact-form{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px} 
-  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px} 
-  fieldset{border:1px solid #e2e8f0;border-radius:10px;padding:10px} 
-  label{display:flex;flex-direction:column;gap:6px} 
-  .contact-interested{display:flex;flex-direction:row;gap:6px; justify-content: space-between;}
+  .grid-2 img {
+    width: 100%;
+    border-radius: 16px;
+
+  }
+
+  .contact-page {
+    padding: 30px 0 60px;
+    text-align: justify;
+  }
+
+  .contact-form {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
+  }
+
+  fieldset {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 10px
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+  }
+
+  .contact-interested {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: space-between;
+  }
+
+  @media (max-width:1224px) {
+    .contact-page {
+      padding: 30px 20px 60px 20px;
+    }
+
+    .listings {
+      padding: 30px 25px 50px 25px;
+    }
+  }
+
+
+  @media (min-width:450px) and (max-width:767px) {
+    .property-card {
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(2, 8, 23, .06);
+      border: 1px solid #e2e8f0;
+      width: 60%;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      justify-items: center;
+    }
+  }
+
+  @media (max-width:768px) {
+    .about-img {
+      text-align: center;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      justify-items: center;
+    }
+
+    .grid-2 img {
+      width: 85%;
+      border-radius: 16px;
+
+    }
+
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 <section class="hero" style="background: url('images/about.jpg') no-repeat center 5% /cover fixed;">
   <div class="overlay"></div>
@@ -22,22 +111,22 @@ include 'header.php';
 <section class="container contact-page">
   <h2>Who We Are</h2>
   <p>
-    At <strong>Dwell Properties</strong>, we believe that a home is more than just a place 
-    to live—it’s where life happens. With years of expertise in the real estate market, 
-    we specialize in connecting people with their dream homes and investment opportunities. 
-    Whether you’re looking to <em>buy, rent, or sell</em>, our team is committed to making 
+    At <strong>Dwell Properties</strong>, we believe that a home is more than just a place
+    to live—it’s where life happens. With years of expertise in the real estate market,
+    we specialize in connecting people with their dream homes and investment opportunities.
+    Whether you’re looking to <em>buy, rent, or sell</em>, our team is committed to making
     the process seamless and stress-free.
   </p>
 
   <div class="grid-2" style="margin:40px 0;">
-    <div>
-      <img src="images/our-team.jpg" alt="Our Team" style="width:100%; border-radius:16px;">
+    <div class="about-img">
+      <img src="images/our-team.jpg" alt="Our Team">
     </div>
     <div>
       <h3>Our Mission</h3>
       <p>
-        Our mission is simple: <strong>to redefine the real estate experience</strong>. 
-        By combining cutting-edge technology, personalized service, and a vast 
+        Our mission is simple: <strong>to redefine the real estate experience</strong>.
+        By combining cutting-edge technology, personalized service, and a vast
         network of properties, we empower clients to make confident decisions.
       </p>
       <ul>
@@ -69,9 +158,9 @@ include 'header.php';
 <section class="container listings">
   <h2>Meet Our Team</h2>
   <p>
-    Behind every successful transaction is a team of dedicated professionals. 
-    At Dwell Properties, we bring together agents, market analysts, and customer 
-    support experts who share one vision: helping you find the perfect home. 
+    Behind every successful transaction is a team of dedicated professionals.
+    At Dwell Properties, we bring together agents, market analysts, and customer
+    support experts who share one vision: helping you find the perfect home.
   </p>
   <div class="cards" style="margin-top:20px;">
     <div class="property-card">
@@ -101,8 +190,8 @@ include 'header.php';
 <section class="container contact-page">
   <h2>Our Promise</h2>
   <p>
-    When you choose Dwell Properties, you’re not just getting a real estate agency—you’re 
-    partnering with a team that values trust, dedication, and results. We don’t just sell houses; 
+    When you choose Dwell Properties, you’re not just getting a real estate agency—you’re
+    partnering with a team that values trust, dedication, and results. We don’t just sell houses;
     we help you find the place you’ll call home.
   </p>
   <div class="center" style="margin-top:20px;">
