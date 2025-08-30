@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dots[current].classList.add('active');
     }
 
-    // ✅ Auto-slide every 5 seconds
+    //  Auto-slide every 5 seconds
     setInterval(() => {
       let next = (current + 1) % quotes.length;
       showSlide(next);

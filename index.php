@@ -42,10 +42,10 @@ include 'header.php'; ?>
             ₹<?= number_format((float)str_replace(['₹', ',', '$'], '', $row['price'])) ?>
           </p>
           <div class="meta">
-            <span title="Beds">🛏 <?= (int)$row['beds'] ?></span>
-            <span title="Baths">🛁 <?= (int)$row['baths'] ?></span>
-            <span title="Levels">🏠 <?= (int)$row['levels'] ?></span>
-            <span title="Sqft">📐 <?= (int)$row['sqft'] ?></span>
+            <span title="Bedrooms"><?= (int)$row['bedrooms'] ?> Bedroom</span>
+            <span title="Bathrooms"><?= (int)$row['bathrooms'] ?> Bathroom</span>
+            <span title="Floors"><?= (int)$row['floors'] ?> Floor</span>
+            <span title="Sqft"><?= (int)$row['sqft'] ?> Sqft</span>
           </div>
         </div>
       </article>
@@ -72,10 +72,10 @@ include 'header.php'; ?>
             ₹<?= number_format((float)str_replace(['₹', ',', '$'], '', $row['price'])) ?>
           </p>
           <div class="meta">
-            <span title="Beds">🛏 <?= (int)$row['beds'] ?></span>
-            <span title="Baths">🛁 <?= (int)$row['baths'] ?></span>
-            <span title="Levels">🏠 <?= (int)$row['levels'] ?></span>
-            <span title="Sqft">📐 <?= (int)$row['sqft'] ?></span>
+            <span title="Bedrooms"><?= (int)$row['bedrooms'] ?> Bedroom</span>
+            <span title="Bathrooms"><?= (int)$row['bathrooms'] ?> Bathroom</span>
+            <span title="Floors"><?= (int)$row['floors'] ?> Floor</span>
+            <span title="Sqft"><?= (int)$row['sqft'] ?> Sqft</span>
           </div>
         </div>
       </article>

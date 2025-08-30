@@ -66,10 +66,10 @@ $rows = $stmt->fetchAll();
             ₹<?= number_format((float)str_replace(['₹', ',', '$'], '', $row['price'])) ?>
           </p>
           <div class="meta">
-            <span>🛏 <?= (int)$row['beds'] ?></span>
-            <span>🛁 <?= (int)$row['baths'] ?></span>
-            <span>🏠 <?= (int)$row['levels'] ?></span>
-            <span>📐 <?= (int)$row['sqft'] ?></span>
+            <span ><span class="highlight"><?= (int)$row['bedrooms'] ?></span>Bedroom</span>
+            <span><span class="highlight"><?= (int)$row['bathrooms'] ?></span>Bathroom</span>
+            <span><span class="highlight"><?= (int)$row['floors'] ?></span>Floor</span>
+            <span><span class="highlight"><?= (int)$row['sqft'] ?></span>Sqft</span>
           </div>
         </div>
       </article>

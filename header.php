@@ -18,7 +18,7 @@
     <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
     <nav class="menu">
       <a href="index.php">Home</a>
-      <a href="about.php">About Us</a> <!-- ✅ New -->
+      <a href="about.php">About Us</a> 
       <a href="properties.php?type=sale">Properties</a>
       <a href="agents.php">Agents</a>
       <!-- <a href="#stories">News</a>

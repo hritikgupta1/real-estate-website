@@ -23,10 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($stmt->execute([$name, $role, $phone, $email, $targetFile])) {
             $message = " Agent added successfully!";
         } else {
-            $message = "❌ Error adding agent.";
+            $message = " Error adding agent.";
         }
     } else {
-        $message = "❌ Error uploading image.";
+        $message = " Error uploading image.";
     }
 }
 ?>
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="form-container">
     <h2>Add New Agent</h2>
     <?php if($message): ?>
-      <div class="message <?= strpos($message, '✅') !== false ? 'success' : 'error' ?>">
+      <div class="message <?= strpos($message, '') !== false ? 'success' : 'error' ?>">
         <?= $message ?>
       </div>
     <?php endif; ?>
