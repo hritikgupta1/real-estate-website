@@ -3,7 +3,14 @@ $page_title = "About Us — Dwell Properties";
 include 'db.php';
 include 'header.php'; 
 ?>
-
+<style>
+  .contact-page{padding:30px 0 60px} 
+  .contact-form{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px} 
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px} 
+  fieldset{border:1px solid #e2e8f0;border-radius:10px;padding:10px} 
+  label{display:flex;flex-direction:column;gap:6px} 
+  .contact-interested{display:flex;flex-direction:row;gap:6px; justify-content: space-between;}
+</style>
 <section class="hero" style="background: url('images/about.jpg') no-repeat center 5% /cover fixed;">
   <div class="overlay"></div>
   <div class="hero-content container">
