@@ -12,6 +12,18 @@ CREATE TABLE properties (
   image VARCHAR(255)
 );
 
+DROP TABLE IF EXISTS admins;
+CREATE TABLE admins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Insert a default admin
+INSERT INTO admins (username, password) VALUES ('admin', '1234');
+
+
 DROP TABLE IF EXISTS agents;
 CREATE TABLE agents (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -21,6 +33,7 @@ CREATE TABLE agents (
   email VARCHAR(100),
   image VARCHAR(255)
 );
+
 
 
 DROP TABLE IF EXISTS contact;

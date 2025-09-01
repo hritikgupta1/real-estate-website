@@ -1,4 +1,4 @@
-<?php if (!isset($page_title)) { $page_title = "Dwell Properties"; } ?>
+<?php if (!isset($page_title)) { $page_title = "Dubai Space"; } ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,17 +13,15 @@
   <div class="container nav">
     <a class="brand" href="index.php">
       <img src="images/logo.svg" alt="Dwell Properties logo" class="logo" />
-      <!-- <span>Space</span> -->
     </a>
     <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
     <nav class="menu">
       <a href="index.php">Home</a>
       <a href="about.php">About Us</a> 
-      <a href="properties.php?type=sale">Properties</a>
-      <a href="agents.php">Agents</a>
-      <!-- <a href="#stories">News</a>
-      <a href="#team">Team</a> -->
+      <a href="properties.php">Properties</a>
+      <!-- Removed Agents link -->
       <a href="contact.php">Contact</a>
+      <a href="admin_login.php">Admin Login</a> <!-- Added Admin Login -->
     </nav>
   </div>
 </header>

@@ -4,6 +4,48 @@ include 'header.php'; ?>
 
 <style>
   /* Responsive */
+  /* Search Bar Styling */
+  .hero-search {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+
+  .hero-search input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    min-width: 300px;
+  }
+
+  .hero-search button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  /* Responsive */
+  @media (max-width:768px) {
+    .hero-search {
+      flex-direction: column;
+      align-items: stretch;
+      font-size: 16px;
+      min-width: 270px;
+    }
+
+    .hero-search input,
+    .hero-search button {
+      width: 100%;
+    }
+  }
+
   @media (max-width:1224px) {
     .cards {
       grid-template-columns: repeat(2, 1fr)
@@ -86,7 +128,16 @@ include 'header.php'; ?>
   <div class="hero-content container">
     <h1>New Properties</h1>
     <p>Exclusively by Dwell</p>
-    <a href="properties.php" class="btn btn-primary">Explore</a>
+
+    <!-- Search Bar -->
+    <form class="hero-search" method="get" action="properties.php">
+      <input
+        type="text"
+        name="q"
+        placeholder="Search properties by address or title..."
+        required />
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
   </div>
 </section>
 
