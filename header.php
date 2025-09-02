@@ -19,9 +19,8 @@
       <a href="index.php">Home</a>
       <a href="about.php">About Us</a> 
       <a href="properties.php">Properties</a>
-      <!-- Removed Agents link -->
       <a href="contact.php">Contact</a>
-      <a href="admin_login.php">Admin Login</a> <!-- Added Admin Login -->
+      <a href="admin_login.php" target="_blank">Admin Login</a> 
     </nav>
   </div>
 </header>
