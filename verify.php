@@ -165,9 +165,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['pending_user'])) {
         </form>
         <?php endif; ?>
 
-        <!-- Back to Home -->
-        <form action="index.php" method="get">
-            <button type="submit" class="btn-back">⬅ Back to Home</button>
+        <!-- Back to Register.php -->
+        <form action="register.php" method="get">
+            <button type="submit" class="btn-back">⬅ Back to registration</button>
         </form>
     </div>
 
