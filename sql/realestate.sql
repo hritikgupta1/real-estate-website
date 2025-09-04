@@ -12,6 +12,32 @@ CREATE TABLE properties (
   image VARCHAR(255)
 );
 
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('user','agent','developer') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY unique_email_role (email, role)
+);
+
+DROP TABLE IF EXISTS pending_users;
+CREATE TABLE pending_users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('user','agent','developer') NOT NULL,
+    is_verified TINYINT(1) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+
 DROP TABLE IF EXISTS admins;
 CREATE TABLE admins (
     id INT AUTO_INCREMENT PRIMARY KEY,

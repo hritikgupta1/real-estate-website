@@ -144,6 +144,14 @@ if (!isset($_SESSION['admin_logged_in'])) {
         <p>Add, Edit, and Delete Properties.</p>
         <a href="manage_properties.php" class="btn">Go →</a>
       </div>
+
+      <!--  Pending Users -->
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <h2>Pending Users</h2>
+        <p>Approve verified users and activate accounts.</p>
+        <a href="admin_pending_users.php" class="btn">Go →</a>
+      </div>
     </div>
   </div>
 </body>

@@ -138,9 +138,10 @@ $currentPage = basename($_SERVER['PHP_SELF']);
   </a>
 
   <ul id="nav-links">
+    <li><a href="admin_dashboard.php" class="<?= ($currentPage == 'admin_dashboard.php') ? 'active' : '' ?>">Dashboard</a></li>
     <li><a href="manage_agents.php" class="<?= ($currentPage == 'manage_agents.php') ? 'active' : '' ?>">Agents</a></li>
     <li><a href="manage_properties.php" class="<?= ($currentPage == 'manage_properties.php') ? 'active' : '' ?>">Properties</a></li>
-    <li><a href="admin_dashboard.php" class="<?= ($currentPage == 'admin_dashboard.php') ? 'active' : '' ?>">Dashboard</a></li>
+    <li><a href="admin_pending_users.php" class="<?= ($currentPage == 'admin_pending_users.php') ? 'active' : '' ?>">Pending Users</a></li>
     <li><a href="admin_logout.php" class="logout">Logout</a></li>
   </ul>
 
