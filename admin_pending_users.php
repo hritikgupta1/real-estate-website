@@ -48,8 +48,8 @@ if (isset($_GET['activate'])) {
             $mail->isHTML(true);
             $mail->Subject = "Dubai Space - Account Activated";
             $mail->Body = "<h3>Dear {$user['name']},</h3>
-                          <p>Your email is now active. You can login into <b>Dubai Space</b>.</p>
-                          <p><a href='http://skgst.in/login.php'>Click here to login</a></p>";
+                          <p>Your email is now active as {$user['role']}. You can login into <b>Dubai Space</b>.</p>
+                          <p><a href='http://localhost/Real-Estate-Web/login.php'>Click here to login</a></p>";
 
             $mail->send();
             $message = "User activated and email sent successfully!";
